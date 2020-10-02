@@ -1,28 +1,19 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 
-import { SubHeader } from 'components'
-import { SomosClient } from 'utils'
+import { Button } from 'components'
 
 import styles from './Home.module.css'
 
-class Home extends React.Component {
-  state = {}
-
-  client = new SomosClient()
-
-  render() {
-    return (
-      <React.Fragment>
-        <SubHeader
-          breadcrumb={[{ text: 'Home' }]}
-          heading="Somos Front-end Challange"
-        />
+const Home = () => {
+  const { push } = useHistory()
+  return (
+      <>
         <div className={styles.wrapper}>
-          <h1>Hi</h1>
+          <Button label="Buscar seus artistas" color="primary" onClick={() => push('/busca')} />
         </div>
-      </React.Fragment>
-    )
-  }
+      </>
+  )
 }
 
 export default Home

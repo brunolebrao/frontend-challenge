@@ -9,6 +9,7 @@ import { LoginCallback } from 'views'
 import { PrivateRoute } from 'components'
 import App from 'App'
 import registerServiceWorker from 'registerServiceWorker'
+import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <Router>

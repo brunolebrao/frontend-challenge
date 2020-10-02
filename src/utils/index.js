@@ -1,3 +1,5 @@
-export { default as SomosClient } from './client.js'
 export { getOauthClient } from './oauth'
 export { getToken, setToken, clearToken } from './token'
+export { getArtists, getArtist } from './client'
+export { api } from './api'
+export { setLoader } from './loader'

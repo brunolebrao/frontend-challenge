@@ -1,3 +1,8 @@
 export { default as Layout } from './Layout'
 export { default as SubHeader } from './SubHeader'
 export { default as PrivateRoute } from './PrivateRoute'
+export { default as Button } from './common/Button'
+export { default as Search } from './common/Search'
+export { default as ArtistsList } from './common/ArtistsList'
+export { default as Card } from './common/Card'
+export { default as Albums } from './common/Albums'
